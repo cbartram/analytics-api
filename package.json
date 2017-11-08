@@ -1,0 +1,39 @@
+{
+  "name": "analytics-api",
+  "version": "1.0.0",
+  "description": "Client API for the Analytics Module",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "test",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cbartram/analytics-api.git"
+  },
+  "keywords": [
+    "analytics",
+    "api",
+    "nodejs",
+    "javascript",
+    "es6",
+    "mongodb",
+    "superagent",
+    "request",
+    "http"
+  ],
+  "author": "cbartram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cbartram/analytics-api/issues"
+  },
+  "homepage": "https://github.com/cbartram/analytics-api#readme",
+  "dependencies": {
+    "backpack-core": "^0.4.3",
+    "superagent": "^3.8.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
