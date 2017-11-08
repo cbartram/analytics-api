@@ -1,5 +1,5 @@
 {
-  "name": "analytics-api",
+  "name": "analytics-api-fb",
   "version": "1.0.0",
   "description": "Client API for the Analytics Module",
   "main": "lib/index.js",

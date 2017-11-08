@@ -25,7 +25,7 @@ module.exports = {
             .set('accept', 'json')
             .end((err, res) => {
                 typeof res !== 'undefined' ?
-                callback(res.body) : callback(err);
+                    callback(res.body) : callback(err);
             });
     },
 
@@ -56,6 +56,16 @@ module.exports = {
      */
     table(name) {
         queryObj.table = name;
+        return this;
+    },
+
+    /**
+     * Constrains result set to documents inside the given set of tables
+     * @param arr set of table namespaces
+     * @returns {module.exports.tables}
+     */
+    tables(arr) {
+        queryObj.tables = arr;
         return this;
     },
 
